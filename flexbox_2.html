@@ -1,0 +1,44 @@
+<!--start > flex box 더 나은 레이아웃!-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flaxable box</title>
+    <link href="reset.css" rel="stylesheet">
+    <style media="screen">
+      ul{
+        display: flex;
+    }
+      ul{
+        border: 1px solid red;
+        padding: 0;
+        list-style: none;
+        background-color: #e8c8c9;
+
+      }
+      li{
+        width:200px;
+        height: 200px;
+        background-color: yellow;
+        margin: 8px;
+        padding:4px;
+      }
+      /*li내에 아이들중 (순서) 번째 아이에게 값은 줌(order) 기본적으노 값은 모두 0을 가지고 있다.*/
+      li:nth-child(1){
+        order: 1
+      }
+      li:nth-child(3){
+        order: 1
+      }
+    </style>
+  </head>
+  <body>
+    <ul><!--praents element-->
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+
+    </ul>
+  </body>
+</html>

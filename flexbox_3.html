@@ -1,0 +1,46 @@
+<!--start > flex box 더 나은 레이아웃!-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flaxable box</title>
+    <link href="reset.css" rel="stylesheet">
+    <style media="screen">
+      ul{
+        display: flex;
+    }
+      ul{
+        border: 1px solid red;
+        padding: 0;
+        list-style: none;
+        background-color: #e8c8c9;
+
+      }
+      li{
+        height: 100px;
+        background-color: yellow;
+        margin: 8px;
+        padding:4px;
+      }
+
+      /*first flex-item*/
+      li:nth-child(1) {
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: auto; /*flex: 2 1 auto*/
+      }
+      /*second flex-item*/
+      li:nth-child(2){
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto /*flex: 1 1 auto */
+      }
+    </style>
+  </head>
+  <body>
+    <ul><!--praents element-->
+      <li>I am one</li>
+      <li>I am two</li>
+    </ul>
+  </body>
+</html>
