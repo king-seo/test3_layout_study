@@ -8,7 +8,7 @@
     header{
       background-color: skyblue;
     }
-    h3{margin-bottom: 10px; font-family: Noto-sans,sans-serif;}
+    h3{margin-bottom: 10px; font-family: sans-serif;}
     header #nav{
       height:50px;
       padding: 10px;
@@ -73,19 +73,29 @@
     background-color: #eee;
     }
     section#up_info .finan_area_wrap{
-    display: flex;
     width: 100%;
     height: 500px;
     }
     section#up_info .finan_area_wrap div{
-    flex: 0 0 50%;
+    width:49%;
     background-color: white;
     border: 1px solid #e3e3e3;
     padding: 10px;
+    height:500px;
+    overflow: scroll;
     }
-    section#up_info .finan_area_wrap div:first-child{
+    section#up_info .finan_area_wrap div.finan{
     margin-right: 10px;
+    float: left;
     }
+    section#up_info .finan_area_wrap div.stock{
+    margin-right: 10px;
+    float: left;
+    }
+    section#up_info .finan_area_wrap .finan_area{
+
+    }
+
     section#up_info .news{
 
     }
@@ -144,6 +154,7 @@
         <div class="finan_area_wrap">
           <div class="finan">
             <h4>financial Info</h4>
+            <p><img src="nirvana.jpg">financial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Infofinancial Info</p>
           </div>
             <div class="stock">
             <h4>stock Info</h4>
