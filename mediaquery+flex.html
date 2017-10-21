@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      ul{margin: 0; padding: 0;}
+      ul{
+        list-style: none;
+        display: flex;
+        border: 1px solid red;
+        justify-content: space-around;
+      }
+      li{
+        flex: 0 0 auto;
+        padding: 10px;
+        margin: 10px;
+        background-color: #8cacea;
+        color: #fff;
+        font-size: 1em;
+      }
+      main{
+        display: flex;
+        align-items: stretch;
+        height: auto;
+      }
+      main div{
+        padding: 100px;
+      }
+      main .content{
+        background-color: green;
+        flex: 1 1 70%;
+      }
+      main .side{
+        background-color: orange;
+        flex: 0 1 30%;
+      }
+      footer{
+        background-color: pink;
+        height: 80px;
+      }
+
+      @media screen and (max-width: 480px){
+      ul.menu{ flex-direction: column;}
+      main{flex-direction: column;}
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Register</li>
+      <li>Login</li>
+    </ul>
+    <main>
+      <div class="content">본문</div>
+      <div class="side">오른쪽사이드</div>
+    </main>
+    <footer>footer</footer>
+  </body>
+</html>

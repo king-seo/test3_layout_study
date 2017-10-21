@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      ul,a{margin: 0; padding: 0; list-style: none; text-decoration: none;}
+      .menu,.side,footer,header{
+        background-color: yellow;
+      }
+      header{
+        margin-bottom: 10px;
+      }
+      a#menu{
+        display: none;
+        font-size: 2em;
+      }
+      .menu{
+        display: inline;
+      }
+      li{
+        display: inline;
+        padding: 10px;
+        }
+      .side{
+        min-height: 400px;
+
+      }
+      .content{
+        min-height: 400px;
+        width:80%;
+        background-color: green;
+        float: left;
+      }
+      footer{
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 480px){
+      .menu{display: none;
+        }
+      a#menu{
+        display: inline;
+      }
+      .side{
+        width:auto;
+        min-height: 0;
+      }
+      .content{
+        width:100%;
+        min-height: 200px;
+        margin-bottom: 10px;
+        float: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+     <a href="#" id="menu">&#x0229B;</a>
+     <ul class="menu">
+       <li>Home</li>
+       <li>About</li>
+       <li>Contact</li>
+       <li>Register</li>
+       <li>Login</li>
+     </ul>
+   </header>
+    <div class="content">본문</div>
+    <div class="side">오른쪽사이드</div>
+    <footer>footer</footer>
+  </body>
+</html>
